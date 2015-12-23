@@ -382,8 +382,11 @@
 
 	h1 {
 		background: url('../../images/socode_light.png') no-repeat;
+		background-size: 100%;
+		width: 516px;
+		max-width: 100%;
 		text-indent: -9999px;
-		line-height: 3.25em;
+		height: 216px;
 	}
 
 	h2 {
@@ -973,7 +976,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #FFB833;
+			background-color: #FF8C00;
 		}
 
 		input[type="submit"]:active,
