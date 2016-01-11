@@ -1057,51 +1057,53 @@
 		display: flex;
 		position: relative;
 	}
+	#mc-embedded-subscribe-form label {
+		margin:0 0 0 0;
+	}
+	#mc-embedded-subscribe-form input[type="text"],
+	#mc-embedded-subscribe-form input[type="password"],
+	#mc-embedded-subscribe-form input[type="email"] {
+		width: 18em;
+	}
 
-		#mc-embedded-subscribe-form input[type="text"],
-		#mc-embedded-subscribe-form input[type="password"],
-		#mc-embedded-subscribe-form input[type="email"] {
-			width: 18em;
+	#mc-embedded-subscribe-form > * {
+		margin: 0 0 0 1em;
+	}
+
+	#mc-embedded-subscribe-form > :first-child {
+		margin: 0 0 0 0;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#mc-embedded-subscribe-form {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
 		}
 
-		#mc-embedded-subscribe-form > * {
-			margin: 0 0 0 1em;
-		}
-
-		#mc-embedded-subscribe-form > :first-child {
-			margin: 0 0 0 0;
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#mc-embedded-subscribe-form {
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-				flex-direction: column;
+			#mc-embedded-subscribe-form input[type="type"],
+			#mc-embedded-subscribe-form input[type="password"],
+			#mc-embedded-subscribe-form input[type="email"] {
+				width: 100%;
 			}
 
-				#mc-embedded-subscribe-form input[type="type"],
-				#mc-embedded-subscribe-form input[type="password"],
-				#mc-embedded-subscribe-form input[type="email"] {
-					width: 100%;
-				}
+			#mc-embedded-subscribe-form > * {
+				margin: 1.25em 0 0 0;
+			}
 
-				#mc-embedded-subscribe-form > * {
-					margin: 1.25em 0 0 0;
-				}
+			#mc-embedded-subscribe-form .message {
+				bottom: -1.5em;
+				font-size: 0.9em;
+				height: 1em;
+				left: 0;
+				line-height: inherit;
+				margin-top: 0;
+				position: absolute;
+			}
 
-				#mc-embedded-subscribe-form .message {
-					bottom: -1.5em;
-					font-size: 0.9em;
-					height: 1em;
-					left: 0;
-					line-height: inherit;
-					margin-top: 0;
-					position: absolute;
-				}
-
-		}
+	}
 
 /* Footer */
 
