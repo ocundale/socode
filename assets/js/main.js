@@ -113,7 +113,7 @@
 					$message;
 
 			// Bail if addEventListener isn't supported.
-				if (!('addEventListener' in $form))
+				if (!$form || !('addEventListener' in $form))
 					return;
 
 			// Message.
